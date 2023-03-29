@@ -13,8 +13,16 @@ public class IntegerArrayExample {
         System.out.println("The Integer Array output is " + Arrays.toString(myIntArray));
 
 //        a program that returns the middle element in an array
-        int[] arr = {13,5,7,68,2};
-        System.out.println("The middle element is " + arr[(arr.length - 1) / 2]);
+        int[] arr = {13,5,7,68,2,6};
+        int arrLength = arr.length;
+        System.out.println("Array length: " + arrLength);
+//        even or odd array length
+        if(arrLength % 2 == 0){
+            System.out.print("The middle elements are " + arr[(arr.length / 2) - 1] + " " + arr[arr.length / 2] + "\n");
+        }else{
+            System.out.println("The middle element is " + arr[arr.length / 2]);
+        }
+
 
         int[] arrFives = {1,2,3,4,5};
         int firstElement = arrFives[0];
@@ -52,7 +60,7 @@ public class IntegerArrayExample {
 //        array and print the value of each element, except for the middle (index 2)
 //        element.
 
-        int[] myArray = {1,2,3,4,5};
+        int[] myArray = {1,2,3,4,5,7};
         int middleElement = myArray[(myArray.length - 1) / 2];
         for(int i = 0; i < myIntFivesArray.length; i++){
             if(myArray[i] == middleElement ) {
